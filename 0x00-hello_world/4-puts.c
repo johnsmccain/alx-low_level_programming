@@ -1,6 +1,9 @@
 #include <stdio.h>
-int main(void){
+int main(void)
+{
+	/* main = entry point*/
 
 	puts("\"Programming is like building a multilingual puzzle");
-	return (1);
+	/*always return zero*/
+	return (0);
 }
