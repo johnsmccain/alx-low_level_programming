@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - print the string in the printf function
+ * main - Entry point
  *
- * descriptions: main print the size of data types in c
- *Return:0
- */
+ * Return: Always 0 (Success)
+ **/
 int main(void)
 {
 	char a;
