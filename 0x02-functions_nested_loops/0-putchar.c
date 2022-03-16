@@ -8,6 +8,10 @@
  */
 int main(void)
 {
+	/**
+	 * declare a variable i 
+	 * print an array of character (_putchar)
+	 */
 	int i = 0;
 
 	char var[8] = "_putchar";
