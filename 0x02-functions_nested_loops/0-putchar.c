@@ -15,5 +15,5 @@ int main(void)
 	for (; i < 8; i++)
 		_putchar(var[i]);
 	_putchar('\n');
-	return 0;
+	return (0);
 }
