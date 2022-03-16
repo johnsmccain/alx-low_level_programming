@@ -2,9 +2,9 @@
 
 /**
  * print_alphabet_x10: Check main
- * Descripton: the function uses _putchar to print alphabet
+ * Description: the function uses _putchar to print alphabet
  * alphabet in lowercase 10 times
- * Return: Nothing
+ * Return: Nothing.
  */
 void print_alphabet_x10(void)
 {
@@ -13,7 +13,7 @@ void print_alphabet_x10(void)
 
 	for (j = 0; j < 10; j++)
 	{
-		for (i = 'a'; i < 'z'; i++)
+		for (i = 'a'; i <= 'z'; i++)
 			_putchar(i);
 		_putchar('\n');
 	}
