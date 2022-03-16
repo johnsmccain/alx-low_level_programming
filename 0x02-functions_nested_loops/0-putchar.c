@@ -4,7 +4,7 @@
  * main - check description
  * Description: It prints the word putchar, followed by a new
  * line
- * Return 0 if successful
+ * Return (0) if successful
  */
 int main(void)
 {
