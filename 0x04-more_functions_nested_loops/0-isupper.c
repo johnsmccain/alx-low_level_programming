@@ -11,7 +11,7 @@ int _isupper(int c)
 	int i;
 	int num = 0;
 
-	for (i = 'a'; i <= 'z'; i++)
+	for (i = 'A'; i <= 'Z'; i++)
 	{
 		if (c == i)
 			num = 1;
