@@ -7,7 +7,6 @@
  */
 int _isupper(int c)
 {
-	char letter;
 	int i;
 	int num = 0;
 
