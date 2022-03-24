@@ -3,8 +3,8 @@
 /**
  * _strcat - a function that concatenate two strings
  * and the adds a terminating null byte.
- * @*dest: An input string
- * @*src: An input string
+ * @dest: An input string
+ * @src: An input string
  * Return: the resulting dest
  */
 char *_strcat(char *dest, char *src)
