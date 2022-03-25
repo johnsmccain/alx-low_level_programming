@@ -1,36 +1,30 @@
 #include "main.h"
 
 /**
- * _strncat - a function that concatenate two strings
- * @dest: an input string
- * @src: an input string
- * @n: an input integer
- * Return: A pointer to the result.
- */
+*_strncat - Funtion
+*
+*@dest: Destiny
+*@src: Source
+*@n: Variable
+*Return: Destiny
+*/
+/**------------------Hello------World--1||1024*/
 char *_strncat(char *dest, char *src, int n)
 {
-	int srclen = 0, i = 0;
-	char *temp = dest, *start = src;
+	int i = 0;
+	int r = 0;
+	int tam = 0;
 
-	while (*src)
+	for (; dest[tam];)
 	{
-		srclen++;
-		scr++;
+		tam++;
 	}
 
-	while (*dest)
+	while (r < n && src[r])
 	{
-		dest++;
+		dest[tam + i] = src[r];
+		i++;
+		r++;
 	}
-
-	if (n > srclen)
-		n = srclen;
-
-	src = start;
-
-	for (; i < n; i++)
-		*dest++ = *str++;
-
-	*dest = '\n';
-	return (temp);
+	return (dest);
 }
