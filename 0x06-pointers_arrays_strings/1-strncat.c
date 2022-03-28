@@ -1,6 +1,7 @@
 #include "main.h"
 
 /**
+<<<<<<< HEAD
  * _strncat - a function that concatenate two strings
  * @dest: an input string
  * @src: an input string
@@ -26,4 +27,32 @@ int _strlen(char *c)
 	while (c[len] != '\0')
 		len++;
 	return (len);
+=======
+*_strncat - Funtion
+*
+*@dest: Destiny
+*@src: Source
+*@n: Variable
+*Return: Destiny
+*/
+/**------------------Hello------World--1||1024*/
+char *_strncat(char *dest, char *src, int n)
+{
+	int i = 0;
+	int r = 0;
+	int tam = 0;
+
+	for (; dest[tam];)
+	{
+		tam++;
+	}
+
+	while (r < n && src[r])
+	{
+		dest[tam + i] = src[r];
+		i++;
+		r++;
+	}
+	return (dest);
+>>>>>>> ed6b4c268fc53b38a64d2670f4158fdc8ff2b191
 }
