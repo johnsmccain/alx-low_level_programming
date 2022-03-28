@@ -7,30 +7,23 @@
  * @n: an input integer
  * Return: A pointer to the result.
  */
+int _strlen(char *c);
 char *_strncat(char *dest, char *src, int n)
 {
-	int srclen = 0, i = 0;
-	char *temp = dest, *start = src;
+	int destlength = _strlen(dest);
+	int i = 0;
 
-	while (*src)
-	{
-		srclen++;
-		scr++;
-	}
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[destlength + i] = src[i];
+	dest[destlength + 1] = '\0';
 
-	while (*dest)
-	{
-		dest++;
-	}
+	return (dest);
 
-	if (n > srclen)
-		n = srclen;
+int _strlen(char *c)
+{
+	int len = 0;
 
-	src = start;
-
-	for (; i < n; i++)
-		*dest++ = *str++;
-
-	*dest = '\n';
-	return (temp);
+	while (c[len] != '\0')
+		len++;
+	return (len);
 }
