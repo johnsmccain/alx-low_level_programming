@@ -1,25 +1,33 @@
 #include "main.h"
 
 /**
- * *_strchr - main function.
- * @s: Pointer to the string.
- * @c: Character to locate in the string.
- *
- * Description: This function locates a character in a string.
- *
- * Return: a pointer to the first occurrence of the character c
- * in the string s, or NULL if the character is not found.
+ * _strspn - a function that gets the length of a prefix substring.
+ * @s: an input string
+ * @accept: an input character with to locate into string s
+ * Return: returns pointer to c position
  */
-
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
+	int count = 0, flag;
+	char *start = accept;
+
 	while (*s)
 	{
-		if (*s == c)
+		flag = 0;
+		while (*accept)
 		{
-			return (s);
+			if (*accept == *s)
+			{
+				count++;
+				flag = 1;
+				break;
+			}
+			accept++;
 		}
 		s++;
+		accept = start;
+		if (flag == 0)
+			break;
 	}
-	return (!c ? s : NULL);
+	return (count);
 }
