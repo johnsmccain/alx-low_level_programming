@@ -23,7 +23,7 @@ int _sqrt(int prev, int root)
 {
 	if (prev > root)
 		return (-1);
-	else if (prev * Prev == root)
+	else if (prev * prev == root)
 		return (prev);
 	return (_sqrt(prev + 1, root));
 }
