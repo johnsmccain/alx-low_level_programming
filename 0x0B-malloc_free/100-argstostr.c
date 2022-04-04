@@ -13,7 +13,7 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	size = 0
+	size = 0;
 /* count the number of chars in each string */
 	for (i = 0; i < ac; i++)
 	{
@@ -22,10 +22,8 @@ char *argstostr(int ac, char **av)
 		size++;
 	}
 	size++;
-/**
- * allocate memory for total number of chars and
- * new line for each word
- */
+/* allocate memory for total number of chars and */
+/* new line for each word */
 	strDup = malloc(sizeof(char) * size);
 	if (strDup == NULL)
 		return (NULL);
